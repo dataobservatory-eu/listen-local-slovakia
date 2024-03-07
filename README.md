@@ -16,7 +16,7 @@ tutorials](https://img.shields.io/badge/tutorials-opencollections.net-E88500.svg
 Code of Conduct.
 
 **Contributors**: 
-- Repository administator: @antaldaniel
+- Repository administator: [@antaldaniel](https://github.com/antaldaniel)
 - Project sponsor (SOZA):
 - Project manager (SOZA):
 - Project manager (Hudobné centrum):
