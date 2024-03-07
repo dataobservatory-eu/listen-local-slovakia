@@ -15,6 +15,13 @@ tutorials](https://img.shields.io/badge/tutorials-opencollections.net-E88500.svg
 🌈 Contribution guidelines - you must abide by the Contributor Covenant
 Code of Conduct.
 
+**Contributors**: 
+- Repository administator: @antaldaniel
+- Project sponsor (SOZA):
+- Project manager (SOZA):
+- Project manager (Hudobné centrum):
+- Project manager (Reprex): 
+
 ## Folders
 
 - [x] `root` - The individual pages of [website
