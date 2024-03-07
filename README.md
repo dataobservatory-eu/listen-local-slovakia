@@ -32,6 +32,10 @@ Code of Conduct.
   files in the root folder.
 - [x] `png` - Portable Network Graphics (png files) for illustrations.
 
+# Outputs
+- [SKCMDb-presentation](https://music.dataobservatory.eu/documents/open_music_europe/slovakia/SKCMDb-presentation.html#/title-slide) - the source file is SKCMDb-presentation.qmd
+- SKCMDb.qmd A long-form text description of our work. 
+
 ## Code of Conduct
 
 Please note that the `OpenCollections Tutorials` are released with a
