@@ -20,7 +20,7 @@ Code of Conduct.
 - Project sponsor (SOZA):
 - Project manager (SOZA):
 - Project manager (Hudobné centrum):
-- Project manager (Reprex): 
+- Project manager (Reprex): [@antaldaniel](https://github.com/antaldaniel) and [@adam-lazar](https://github.com/adam-lazar)
 
 ## Folders
 
