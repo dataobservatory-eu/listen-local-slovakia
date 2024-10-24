@@ -1,0 +1,107 @@
+---
+title: "Federating open knowledge about contemporary and historic Finnougrin cultural practices in the Wikibase system"
+subtitle: "Building trust in complex artificial intelligence systems"
+editor: source
+author:
+  - name: "Antal, Dániel"
+    orcid: 0000-0003-1689-0557
+  - name: "Gábor, Kata"
+    orcid: 0000-0002-5420-7002
+  - name: "Mere, Britt-Kathleen"
+    orcid: 0009-0007-0528-622X
+  - name:  "Mester, Anna Márta"
+    orcid: 0009-0008-2274-8163
+  - name: "Pigozne, Ieva"
+    orcid: 0000-0003-1726-0928
+  - name: "Tímár, Bogáta"
+    orcid: 0000-0001-9020-0273
+  - name: "Vieira, Fábio Generoso"
+    orcid: 0000-0003-4253-1953
+  - name: "Vīvere, Ieava"
+    orcid: 0000-0003-3363-3552
+format: 
+   html: 
+     toc-depth: 3
+   epub: 
+     toc-depth: 3
+   docx: 
+     reference-doc: docx/dhnbpub-template.docx
+   pdf:
+    colorlinks: true
+    toc-depth: 3
+    latex: 
+       - lof: true
+papersize: A4
+bibliography:
+  - bib/antal.bib
+  - bib/datagovernance.bib
+  - bib/eXtremeDesign.bib
+  - bib/ISOdata.bib
+  - bib/livonians.bib
+  - bib/dataspace.bib
+  - bib/OpenMuse.bib
+  - bib/privatelyhelddata.bib
+  - bib/wikidata.bib
+  - bib/trustworthyAI.bib
+---
+
+In our paper we would like to present a demonstration of a trustworty artificial intelligence application filled with actual datasets about contemporary and historic Finno-Ugric cultural practices centered around music. Our paper intersects with the topics of _Integrating traditional humanities and computation_ and _Artificial Intelligence_, but perhaps best answers the _Coming down the ‘Ivory Tower’_[^longnote]. We want to demonstrate is possible to federate a well-designed, and existing data (sharing) space utilising the connection of the Wikibase open-source knowledge management and the R open-source language with novel disciplinary, institutional, geographical, or culturally and linguistically broader data (and knowledge.)
+
+We would like to answer the following questions:
+
+- How is it possible to extend GLAM data interoperability programs to the private sector, particularly in areas like music, audiovisual or fashion, where the private sector holds more data and digital assets than GLAM institutions?
+
+- What measures can be taken to avoid the data biases described in intersectional data feminist critique that lead to an underrepresentation of women and ethnic minorities in databases?
+
+- To what extent can we connect strictly curated GLAM knowledge with authority control with subcultural and ethnic minority knowledge that is often tacit or described at best with folksonomies?
+
+- To avoid the bad experience with the Liv and Mari Wikipedia incubators, is it possible to improve the community stewardship, data curation and community control practices of open knowledge management?
+
+- Generally, how can a trustworthy AI application, i.e., an intelligent knowledge base, comply best with the recent Data Governance Act and the AI Act of the European Union? What lessons are learned about data protection when joining public and private-sector data?
+
+
+[^longnote]: Corresponding author: Daniel Antal (daniel.antal@reprex.nl), team members:  Pigozne, I (Institute of Latvian History), Vīvere, I (Archives of Latvian Folklore)--humanities researchers and data curators; Tímár, B (University of Tartu) and Mere, BK (University of Tartu) linguists, data curators, and Finno-Ugric community organisers; Mester AM (Reprex), Vieira F(University of Amsterdam)---data managers; Gábor K (INALCO)--computational linguist, natural language processing. 
+
+## Methodology
+Utilising our experience and own open-source, peer-reviewed scientific software code, we will create datasets that can be turned into knowledge (semantically valid knowledge statements with an actual/false value). We add these datasets to a semantic knowledge base with our own developed extensions of the Wikibase open knowledge management system. This way we create an open graph database that offers an interoperable schema with a potential to connect various organisations' or research institutions'databases.) We will showcase our dataspace developed in Slovakia with federated new datasets on contemporary Finno-Ugric popular music, historical folk music of the Baltic area, dress and dance history of the Baltic Area, authority control data on named entities and terms, and generally useful metadata and compare them with our far more comprehensive results in Slovakia.
+
+We want to create tools for an improved application of the European Interoperability Framework that not only connects public GLAM and open science data resources but also privately-held data. This approach requires significant contributions in data governance (the legal and organisational aspects of interoperability) and some improvements in the semantic and technology layers.
+
+The _Wikibase Data Model_ and the Wikibase open knowledge management system have been successfully used in many digital humanities interest projects to build an interdisciplinary consensus on conceptualising the heritage of interest. From a data science point of view, our main effort is connecting the Wikibase open knowledge management system with the R statistical environment and creating new extensions of both systems [@antal_dataset_2023; @antal_2024_13972087]; in our paper, we would like to recall the functional requirement setting with software- and ontology design patterns and the released (and peer-reviewed code.) 
+
+Our overarching methodology for connecting computer and data sciences with digital humanities and copyright law is appropriate conceptualisation and ontologies encoded into a collaborative semantic system that is usable by both digital humanities researchers and private data owners.
+
+## Public-private interoperability
+With the European Commission's support in the Open Music Europe project [@openmuse_2023], we have been implementing a data-sharing space in Slovakia for GLAM organisations and private parties [@emo_feasibility_2020; [@antal_promoting_slovak_2020]. The European Union’s objective is to improve the interoperability of open science and statistics towards the business sector, particularly important with humanities research materials of music, film and fashion. In these areas, copyrights or neighbouring rights often apply, which creates legal and organisational barriers to digital humanities research. Private parties manage the global copyright and neighbouring rights identification and registration system, the intellectual rights of such humanities-interest material private property, and its authority file systems. Private parties also own a magnitude larger amount of digital and data assets in music, film, and fashion. 
+
+Bringing down legal and organisational barriers is an important first step, but if we cannot go further on this road with a semantic and technological alignment, then data will still not be interoperable. Our aim is not to optimise the performance of our ontologies and knowledge basis regarding inferential capacity, or to compete with large, basic-research type ontology design work like that of Polifonia [@de_berardinis_polifonia_2023], but to design software and ontology patterns [@blomqvist_engineering_2016] in R and RDF (data/metadata languages) that can break through the barriers in a cost-effective way without perfection. We will show this approach with connecting knowledge about music, estive dresses, dance choreography, and lyrics. 
+
+In the 2020s, statistician increasing abandon questionnaire-based surveying (which is costly and often inaccurate), and tap into the data systems of electricity companies, digital platforms, and other private administrative data sources to find more accurate and up-to-date information [@ess_privately-held-communication_2022]. We would like to show that these novel approaches to data collection and consolidation have a high reuse potential in digital humanities. Statisticians and socio-economic researchers want to avoid systematic biases when they collect data; for example, they cannot utilise a system that provides less accurate data on women musicians than men. While in humanities research, the aim of curating novel collections for analysis does not aim at statistical representativeness, the statistical methodology of designing collections that avoid biases appears to be particularly useful for researching areas that had been overlooked by an intersection of past discrimination, for example, because historically, less data has been collected about women, members of small ethnic groups, and especially stateless minorities. [@data_feminism_2020]
+
+## Authority control
+The incomplete, "as-needed" way of conceptualisation, in line with the spirit of dataspaces, provides us encouraging results in breaking down not only institutional data silos but disciplinary ones. While we developed our system with a music focus, we successfully applied it to textile research  [@pigozne_antal_dataset]. We want to demonstrate our ability to cross-domain conceptualise, and we will connect songs around the rather fuzzy concept of _Dreams_ with potential locations, performances, choreographies, and festive dresses from various Baltic nations.
+
+In digital humanities, authority control for named entities (people and things described in thesauri) is a key requirement for joining data collections across GLAM institutions. The same can be said when we extend access to private data sources; however, authority control becomes far more complicated. In our paper, we want to publish the first case in which we have legally and operationally connected a national copyright registry (Slovak Performing and Mechanical Rights Society) parallel to the authority control of a national library.
+
+When we approach smaller countries or mainly stateless ethnic minorities, authority control often cannot rely on explicit (already interoperable and semantically coded) authoritative information. We must be able to conceptualise and describe the tacit knowledge of communities appropriately, something we will show with a recent collection of Finno-Ugric minority popular music. 
+
+The independently produced music of Baltic subcultures, not to mention that Finno-Ugric popular music often recorded in the Russian Federation is missing from copyright registers. Their authors are not present in library systems, and their music is described on a folksonomy level at best. We want to tool and empower curators of less formally described knowledge about Finno-Ugric cultural practices to have a toolkit and support to connect knowledge about these communities, subcultural groups, and their music, dance, fashion or other cultural practices to a genuinely interoperable knowledge base. We would also like to show how the results of a groundbreaking (explicit knowledge creation) work, the results of the _Documenting and Mapping Livonian Place Names and Creating an Official Place Name Register (2020–2022) project_ [@ernstreits_livonian_2020] can be utilised in this regard.
+
+Wikibase has often been used for authority control  [@bianchini_beyond_2021; @fagerving_wikidata_2023]  with excellent results. However, we are also informed about the highly problematic incubated Liv and Mari Wikipedias, which researchers and minority communities generally see as bad examples of language corpus pollution. In our paper, we want to show how improved data governance in the co-curation of collaborative open graph databases can connect already authoritatively described data and metadata to the scattered knowledge of communities or novel research that had not previously relied on artificial intelligence or semantic technologies.
+
+## Inclusive Data Governance and Trustworthy AI
+A dataspace is an emerging approach to data management which recognises that in large-scale integration scenarios involving many partners, it would be prohibitively expensive and time-consuming to obtain an upfront unifying schema across all sources or to come to a legal agreement on the terms of using or exchanging the data. It is an intelligent application that allows a near-instantaneous exchange, processing, sharing and provision of data on an “as-needed” or “as-permitted” basis while retaining complete control of each data holder over the conditions (e.g., who, when, and under what condition) of access to their data  [@curry_dataspaces_2020; @dataspace_for_cci_2022, p16; @design_principles_data_spaces_2021].
+
+Exchanging data on an “as-needed” basis requires trust among organisations that have never exchanged data before. In Slovakia, we kept involving all key stakeholders. Eventually, we created a high-level Memorandum of Understanding with key stakeholders [@open_music_europe_sk_mou_2023], which was later extended with further written protocols among the authority control bodies of the national library and the copyright registration agency on one hand and with a pioneering engagement of the Wikipedian community via a special Wikipedian in Residence program  [@antal_grochal_wikimedia]. With much smaller datasets and less at stake, we would like to bring this approach a step closer to small subcultural or ethnic minority communities in the Baltic region by means of data federation and opening up or ealier geographically Central Europe-centered system.
+
+Trust can only be maintained with a robust, often codified, well-understood governance model that applies strict normative guidelines on how data sharing can be organised and executed. An important inspiration to our work is the creation of the Luxembourg Shared Authority File with Wikibase. While remaining in the realms of the public GLAM sector, the project already faced challenges with applying the European General Data Protection Rules (GDPR) in GLAM [@pfeiffer_representing_2021]. In our work, we had to bring data governance to a next level, because private legal entities must apply GDPR in a more restrictive manner.
+
+In late 2024, the decade-long foundational work about autonomous systems' ethical and human-rights aspects [@getting_the_future_right_2020; @ethics_guidelines_trustworthy_ai_2019] is kicking in as binding regulation in the form of the Data Governance and AI Act of the EU.  
+
+The top priority in building a trustworthy AI system is to provide human control or at least keep humans in the loop. In this regard, we would like to apply novel language technology extensions of the Wikibase system, which allow the reverse translation of semantic statements (machine-coded knowledge) to natural human language, including, to some extent, minority languages. We will do this with adding to the Wikibase system that coordinates or data sharing space a linguistically well-configured _Lexeme_ extension that provides improved modelling for lexical entities such as words and phrases, and to improve re-use and mappings to other vocabularies. We would like to create a toolset that allows the revision of the knowledge encoded in our shared open graph database in many human languages and in terms that it is understandable and transparent to formal data owners or community data stewards of contemporary popular music or ethnic minority heritage; then negotiate data exchange rules that will eventually lead to a consensual governance of the shared, open, linked database on Finno-Ugric material and immaterial cultural heritage.
+
+
+## References
+
+
+

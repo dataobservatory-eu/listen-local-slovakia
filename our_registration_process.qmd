@@ -1,0 +1,122 @@
+---
+title: "Our registration process"
+format: html
+editor: visual
+---
+
+## Personal name space
+
+The aim of the personal name space is the unambiguous identification of living or deceased persons. In our practice we do not deal with fictional characters.
+
+Our aim is to identify the given names(s) and family name(s) of the persons.
+
+### Importing names as strings
+
+-   [x] Import the name of the person as a string.
+-   [x] If possible, import separately given name(s) and surname(s).
+-   [ ] If not possible, we will make a best effort to make the separation.
+
+We try to import to, or create a `given_name_string` variable, which contains the given name of a person, for example, Anna, or Béla as an uncontrolled string.
+
+::: callout-note
+#### given name
+
+A name chosen for a person at birth that identifies and differentiates that person from others in the same family. Depending on the culture a person is born into, the given name can precede or follow a `surname` (i.e. family name). A given name may also be known as a `forename`, `first name`, or `personal name`.
+:::
+
+We try to import to, or create a `given_name_string` variable, which contains the surname of a person, for example, Bartók, as an uncontrolled string.
+
+::: callout-note
+#### surname
+
+A name used as a family name that may precede or follow a `given name`, depending on the culture.
+:::
+
+After the separation, we try to match the strings with authoritative, controlled given names and surnames.
+
+### Matching names with authoritative items
+
+-   [x] All our Wikibase contain a `given name item`, which is identically defined to [wd:Q202444](https://www.wikidata.org/wiki/Q202444)) on Wikidata.
+-   [x] The `given name` as a class has members, like `Béla` or `Ján`.
+-   [x] If the `given_name_string` is present in our Wikibase, for example, there is already a `Béla` item, we match it with all given name strings that are equal to Béla.
+-   [ ] If we find a `given_name_string`, for example, Jonathan, that is not yet present in our Wikibase, we start a control procedure.
+
+### Control procedure for names
+
+-   We check if the given name (e.g. Jonathan) can be found on Wikidata (wd:Q1158394).
+
+-   If we find it, we will create an item in our own Wikibase.
+
+-   If we do not find it on Wikidata we will confirm with an expert that the name is correct (e.g. spelling, name variants etc.) After conformation we will upload it as an item to our Wikibase and match the given name string to the item.
+
+### Connecting a person to a controlled name
+
+In the Wikibase Data Model, we can connect entities (items), for example, the concept of `Béla Bartók` with the concepts of a controlled given name `Béla` and a controlled surname `Bartók` with **properties**.
+
+Properties are numbered. To maintain an compatibility with Wikidata, when we create an equivalent property to a property on Wikidata, we always make a statement of equivalence.
+
+For example, the `given name` property has the PID identifier of P735 on Wikidata. If this PID happens to be P45 on our instance, we state that the Wikidata PID is P735. (P45=wd:P735.)
+
+The use of controlled items reduces ambiguity, but homonyms, i.e., persons with identical full names may appear. Therefore, we use special names, so-called identifiers that can be given only to one particular person. We use the ISNI identifier and the VIAF identifier.
+
+The five semantic statements of connecting `Béla Bartók` to `Béla` and `Bartók` are the following:
+
+| Subject       | Predicate (property)                                                | Object                                                           |
+|---------------|---------------------------------------------------------------------|------------------------------------------------------------------|
+| `Béla Bartók` | [wd:P735](https://www.wikidata.org/wiki/Property:P735) (given name) | `Béla` [wd:Q13484571](https://www.wikidata.org/wiki/Q13484571)   |
+| `Béla Bartók` | [wd:P734](https://www.wikidata.org/wiki/Property:P734) (surname)    | `Bartók` [wd:Q16479660](https://www.wikidata.org/wiki/Q16479660) |
+| `Béla Bartók` | Wikidata QID                                                        | [Q83326](https://www.wikidata.org/wiki/Q83326)                   |
+| `Béla Bartók` | [wd:P214](https://www.wikidata.org/wiki/Property:P214) (VIAF ID)    | [`89006617`](https://viaf.org/viaf/89006617/)                    |
+| `Béla Bartók` | [wd:P213](https://www.wikidata.org/wiki/Property:P213) (ISNI ID)    | [0000000121429277](https://isni.org/isni/0000000121429277)       |
+
+## Corporate name space
+
+The aim of the corporate namespace is the unambiguous identification of corporate bodies.
+
+### Corporations
+
+Similarly to personal names we match the corporate names with controlled items and for identification we add the Open Corporate ID, VIAF and ISNI. If the corporation does not have an Open Corporate ID we add their national register ID (in Slovakia and the Czech Republic that is the IČO ID).
+
+::: callout-note
+#### corporate name
+
+the name of an agency, association, business, firm, government, institution, nonprofit enterprise, performing group, etc. used as an authorized access point in a bibliographic record.
+:::
+
+Let's have a look at [Opus a.s.](https://www.wikidata.org/wiki/Q2617185):
+
+| Subject | Predicate (property)                                                           | Object                                                          |
+|---------|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| `Opus`  | [wd:P735](https://www.wikidata.org/wiki/Property:P735) (headquarters location) | `Bratislava` [wd:Q1780](https://www.wikidata.org/wiki/Q1780)    |
+| `Opus`  | [wd:P734](https://www.wikidata.org/wiki/Property:P734) (OpenCorporates ID)     | [sk/31321755](https://opencorporates.com/companies/sk/31321755) |
+| `Opus`  | Wikidata QID                                                                   | [Q2617185](https://www.wikidata.org/wiki/Q2617185)              |
+| `Opus`  | [wd:P214](https://www.wikidata.org/wiki/Property:P214) (VIAF ID)               | [140632766](https://viaf.org/viaf/140632766/)                   |
+
+### Control procedure for corporate names
+
+As a first step we upload companies which have been checked by an expert in [Open Corporates](https://opencorporates.com/) or in the national registry of the country where the company resides in.
+
+Besides the control procedure already mentioned for names we also have to make sure to check
+
+-   the corporate name changes thorough the years,
+
+-   if the company is still active or it has been terminated.
+
+### Music groups
+
+::: callout-note
+A music group or music ensemble is a group of people who perform instrumental and/or vocal music, with the ensemble typically known by a distinct name.
+:::
+
+A music ensemble (or an atelier like a photo studio) is usually not a legal entity which means it does not have Open Corporation, VIAF or ISNI IDs and that makes it much harder to identify. In that case some informations that can help with identification are the location of the ensemble, its official website if there are any, the date of foundation of the group and the names of its members.
+
+Let's have a look at the [Bratislava Symphony Orchestra](https://www.wikidata.org/wiki/Q11939573):
+
+| Subject                         | Predicate (property)                                                           | Object                                                       |
+|---------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `Bratislava Symphony Orchestra` | Wikidata QID                                                                   | [Q11939573](https://www.wikidata.org/wiki/Q11939573)         |
+| `Bratislava Symphony Orchestra` | [wd:P735](https://www.wikidata.org/wiki/Property:P735) (headquarters location) | `Bratislava` [wd:Q1780](https://www.wikidata.org/wiki/Q1780) |
+| `Bratislava Symphony Orchestra` | [wd:P2031](https://www.wikidata.org/wiki/Property:P2031)(work period (start))  | 2000                                                         |
+| `Bratislava Symphony Orchestra` | [wd:P856](https://www.wikidata.org/wiki/Property:P856)(official website)       | <http://www.bso.sk/>                                         |
+| `Bratislava Symphony Orchestra` | [wd:P214](https://www.wikidata.org/wiki/Property:P214) (VIAF ID)               | [168541495](https://viaf.org/viaf/168541495/)                |
+| `Bratislava Symphony Orchestra` | [wd:P213](https://www.wikidata.org/wiki/Property:P213) (ISNI ID)               | [0000000122042525](https://isni.org/isni/0000000122042525)   |

@@ -18,17 +18,23 @@ The related project management place is [Open Music Slovakia](https://github.com
 Code of Conduct.
 
 **Contributors**: 
-- Repository administator: [@antaldaniel](https://github.com/antaldaniel)
-- Project sponsor (SOZA):
-- Project manager (SOZA):
-- Project manager (Hudobné centrum):
-- Project manager (Reprex): [@antaldaniel](https://github.com/antaldaniel) and [@adam-lazar](https://github.com/adam-lazar)
+- Repository administrator: [@antaldaniel](https://github.com/antaldaniel)
 
 ## Folders
 
 - [x] `root` - The individual pages of [website
   menu](https://opencollections.net/documents/tutorials/index.html) in
   `qmd` files.
+  
+- `SKCMDb.qmd`: Definition of SKCMDb.
+- `SKCMDb-presentation.qmd`: From Listen Local to the European Music Observatory, our Quarto presentation.
+- `SKCMDb_data_paper.qmd`: a short, factual description of the data
+- `WP5-presentation.qmd`: presentation of the work in WP5 of Open Music Europe
+- `Garments_from_Latgale.qmd`: data description for the dataset.
+- `dataspace_poster.qmd`: poster proposal for the [Digital Dreams and Practices](https://dhnb.eu/conferences/dhnb2025/) conference.
+- `finno_ugric_paper_proposal.qmd`: paper proposal for the [Digital Dreams and Practices](https://dhnb.eu/conferences/dhnb2025/) conference.
+- `our_registration_proces.qmd`: our procedures to register works in the SKCMDb
+
   
 ## Bibliography and citation management 
 
