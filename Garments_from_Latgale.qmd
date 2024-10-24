@@ -1,0 +1,54 @@
+---
+title: "Linked Open Datasets on Garments from the Latgale Region"
+subtitle: "Data description and pre-release data access points"
+author:
+  - name: Ieva Pigozne
+    orcid: 0000-0003-1726-0928
+  - name: Antal Dániel
+    orcid: 0000-0003-1689-0557
+date: today
+format:
+  html: 
+    toc-depth: 3
+  epub: default
+  docx: default
+  pdf:
+    colorlinks: true
+    latex: 
+       - lof: true
+papersize: A4
+version: 0.1
+doi: 10.5281/zenodo.13971708
+editor: visual
+subject: Digital humanities
+lang: en-GB
+bibliography: 
+ - bib/dataspace.bib
+ - bib/ISOdata.bib
+ - bib/OpenMuse.bib
+ - bib/skcmdb.bib
+ - bib/wikidata.bib
+---
+
+
+The data published were collected within Ieva Pigozne’s postdoctoral research “Development of Folk Dress in Latgale in the 19th Century” (1.1.1.2/VIAA/1/16/092) in 2018-2020. 
+
+The first published dataset contains data on Latvian traditional shirts from the Latgale region in Eastern Latvia. The shirts are handmade and were worn in the 19th century. They represent both festive and daily wear of the local female and male peasants. The shirts are stored at the _National History Museum of Latvia_ and the _Ethnographic Open-Air Museum of Latvia_. The data contain information on the country, region, district, and municipality of their origin, their approximate date of creation with various precision, the materials they are made of, and the way of their fabrication, as well as their purpose of wearing (festive or daily wear) and wearer’s gender. They also include the name of the museum each shirt is stored at, supplemented with its unique inventory number. Data on sample shirts also include a photo of the shirt.
+
+The Short-term Scientific Mission “Collecting, Evaluating, and Connecting Data for Dress History” was carried out by Ieva Pigozne within the COST action “Europe through Textiles: Network for an integrated and interdisciplinary Humanities” (Euroweb) CA19131. During this short-term mission, we brought this format to an interoperable, linked, open data format to foster knowledge exchange and reuse.
+
+Our task was to add a better structure to this database and to describe the data in a way that requires no outside knowledge of the schema or definitions used in the database. This kind of normalisation of the annotation allows other researchers to reuse and innovate with the dataset, and also enables the author to import data from different sources.
+
+Our central transformation needed to transform the tabular dataset into a neural network-like graph. We connected various elements of a spreadsheet table so that they became elementary scientific statements. Scientific statements always take a subject-predicate-object form, with a scientifically verifiable true or false value. A particular shirt is blue. A particular apron has a length of 95 cm.
+
+Technically, we needed to convert IP's original datasets into Cobb's third normal form, which data scientists often call tidy, and organise the data in a way that every observational unit (shirt) is in a row of the dataset, and each property is brought into relationship with this shirt in subsequent columns. 
+
+Bringing the dataset to a third normal form allows the translation to machine-readable and easily verifiable elementary scientific statements, but it does not necessarily make them readable for a fellow human researcher. Semantic structuring will initially require an information or data scientist, though our approach is straightforward and easy to copy in similar scenarios.
+
+To open up and reuse the database and connect information in different organisations, we also have to ensure that all the new knowledge is understood similarly, for example, the concet of "blue"? As a colour, a dye, or a fabric, it has to be understood across natural languages ("blauw" in the Netherlands and "kék" in Hungary) or measured as the light (reflection) in the 477.5±122.5 nanometre spectrum or described with the 0000FF sRGB colour hex triplet.
+
+The last step was to ensure that definitions of qualitative data, like the blue colour or the unit of measurement for apron length (centimetres), would be linked so that computers could read them into their databases and researchers could efficiently work with them across the countries. Because Latgale is in an area connected to Imperial Russia and Germany, terms like "shirt" and "blue" should be at least available in Latvian, German, Russian and the new lingua franca, English. We added links to the Art & Architecture Thesaurus® definitions to the qualitative data, but we also realised the shortcomings of this approach, which we will explain in a forthcoming conference paper.
+
+Currently access to the database is possible via <https://reprexbase.eu/textilebase/index.php?title=Main_Page> on a password-protected website. After further checks and improvements we will release the datasets for everybody on an open platform.
+
+

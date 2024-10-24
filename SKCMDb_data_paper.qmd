@@ -1,0 +1,52 @@
+---
+title: "SKCMDb (pre-release)"
+subtitle: "Data description and pre-release data access points"
+author:
+  - name: Antal Dániel
+    orcid: 0000-0003-1689-0557
+date: today
+format:
+  html: 
+    toc-depth: 3
+  epub: default
+  docx: default
+  pdf:
+    colorlinks: true
+    latex: 
+       - lof: true
+papersize: A4
+doi: 10.5281/zenodo.13955893
+editor: visual
+subject: Dataspace
+lang: en-GB
+bibliography: 
+ - bib/dataspace.bib
+ - bib/ISOdata.bib
+ - bib/OpenMuse.bib
+ - bib/skcmdb.bib
+ - bib/wikidata.bib
+---
+
+The aim of the **Slovak Comprehensive Music Database** (\`SKCMDb\`\`) is to provide a trustworthy description and easy access to all music created on the territory of the modern Slovak Republic or created by musicians who have lived in Slovakia, use the Slovak language or claim Slovak identity. It does not aim to define "Slovakness" in legal or ethnomusicological terms; it wants to make visible the new music made in the country and provide access to its music heritage, including the heritage of its minority communities.
+
+![The current, pre-release data entry point is \<https://reprexbase.eu/demo/index.php?title=Item:Q200\>](png/skcmdb_entry_point_20241019.png)
+
+The `SKCMDb` will be officially released at the International Association of Music Centres annual conference in Vienna on 21 November 2024. This data paper provides an ongoing access point and data description for the early linked open data version of the database. The current entry point is <https://reprexbase.eu/demo/index.php?title=Item:Q200>
+
+The Slovak Comprehensive Music Database (`SKCMDb`) follows the early specifications set in its Feasibility study ([@antal_slovenskom_hudobnom_2019_en; @antal_slovenskom_hudobnom_2019]). It was created with the help of a data-sharing space [\@ @dataspace_for_cci_2022] among SOZA (Slovak Performing and Mechanical Rights Society), Music Centre Slovakia, the Slovak National Library, Wikidata, and Wikimedia Slovensko, with the technical data integration carried out by Reprex B.V.. It is open for other organisations to join, and it contains metadata links to Europeana, MusicBrainz, Spotify, Deezer, and YouTube, with the possibility of adding data and metadata from further platforms.
+
+In its current early stage, it helps the trustworthy identification of musicians and their groups and connects it to some of their musical works and sound recordings. We aim to connect soon with sheet music and lyrics, too.
+
+`Musical works`: we are following the ISWC [@iso_iswc_2022] specification for describing musical works, because this is the standard that is used for their copyright protection. Because the ISWC database is not open for any users, we are initiating consultations on various industry platforms about the best linked, open identification of musical works.
+
+`Sound recordings`: we follow the specifications of the ISRC standard [@iso_isrc_2019,] and its handbook. [@international_isrc_registration_authority_international_2021]. Because there is no central and public register of the sound recordings, we aim to connect ISRC codes of the manifestations of musical works with a clear identity of the work itself.
+
+`Musical performers`: we are compiling a comprehensive, musicological and rights management description of all known music groups connected to Slovakia. We aim to connect all known recorded fixations (live or studio) to the groups. The current entry point to the live beta database is <https://reprexbase.eu/demo/index.php?title=Item:Q204>. See also [choirs](https://reprexbase.eu/demo/index.php?title=Item:Q205); [orchestras](https://reprexbase.eu/demo/index.php?title=Item:Q1164); [instrumental ensembles](https://reprexbase.eu/demo/index.php?title=Item:Q1168), [vocal groups;](https://reprexbase.eu/demo/index.php?title=Item:Q1182) [jazz groups](https://reprexbase.eu/demo/index.php?title=Item:Q1271); [blues groups in Slovakia](https://reprexbase.eu/demo/index.php?title=Item:Q1275).
+
+`Musical composers`: we are connecting music composers to their works. Because of GDPR restrictions, currently our database only contains the data of a few artists who explicitly opted-in to our database. See: [composers in Slovakia](https://reprexbase.eu/demo/index.php?title=Item:Q203).
+
+`Music publishers`: we have created a satellite business register for music publishing that we are going to broaden to other economic activities related to music in Slovakia. See: [music publishers in Slovakia](https://reprexbase.eu/demo/index.php?title=Item:Q201).
+
+Our work is supported by the European Commission [@openmuse_2023] and follows the [@emo_feasibility_2020].
+
+## References
