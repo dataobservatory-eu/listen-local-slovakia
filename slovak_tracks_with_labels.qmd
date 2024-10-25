@@ -1,0 +1,64 @@
+---
+title: "Slovak tracks with labels"
+author: 
+  name: "Fabio Vieira"
+  affiliation: "IViR, University of Amsterdam"
+  orcid: "0000-0003-4253-1953"
+  format: html
+editor: visual
+bibliography: references.bib
+---
+
+## Slovak Tracks with Labels
+
+This is a data set of tracks extracted from the Spotify API (@spotifyr) using Slovak words as search terms and filtered for ISRCs that started with the country code SK (Slovakia).
+
+The data set contains 31520 rows and 14 columns.
+
+The words used for data extraction were:
+
+-   100 most common Slovak verbs (<https://extralanguages.com/most-common-slovak-verbs/>)
+
+-   115 most common Slovak adjectives (<https://extralanguages.com/most-common-adjectives-in-slovak/>)
+
+-   150 most common names in Slovakia (<https://forebears.io/slovakia/forenames>).
+
+First, the terms were used to extract tracks with the function **search_spotify**. Subsequently, we used the function **get_album** to find the label name available on Spotify.
+
+## Variables
+
+Each one of the 14 columns in this table represents a different variable. Read the description of the variables below:
+
+-   **numeric_id:** An identifier used as identifier key in the database.
+
+-   **spotify_track_id:** A 22 character string that identifies the track on Spotify. This is know as track ID on Spotify.
+
+-   **spotify_track_uri**[^1]**:** A 36 character string that represents the Spotify URI of the track.
+
+-   **popularity**[^2]**:** Spotify's popularity index for the track represented in that row (@middlebrook2019song).
+
+-   **duration_ms:** The duration of the track in milliseconds as extracted from Spotify.
+
+-   **time_query:** The time stamp of the query, i.e the time at which that particular observation (row) was extracted. This is particularly important for the **popularity** index given that it changes everyday, we must know when exactly a value was extracted, otherwise it has no meaning.
+
+-   **spotify_artist_name:** A string containing the artist name as extracted from Spotify.
+
+-   **spotify_artist_id:** A 22 character string that identifies the artist Spotify. This is know as artist ID on Spotify.
+
+-   **spotify_artist_uri:** A 37 character string that represents the Spotify URI of the artist.
+
+-   **isrc:** A 12 character string representing the International Standard Recording Code of the track (@ISO39101, @isrchandbook). It is unique for every track.
+
+-   **isrc_contry:** A 2 character string that represents the country code (as in @ISO3166) as extracted from the **isrc** (the first two characters of the code). In the case of this particular data set, all country codes should be SK, indicating that the track was registered in Slovakia (see also @isrchandbook p. 7).
+
+-   **isrc_registrant:** A 3 character string that represents the code of the entity that registered the track, i.e. the rights owner. It is formed by characters 3, 4 and 5 extracted from the **isrc**. Together with **isrc_country**, it forms the prefix code of the ISRC (see @isrchandbook p. 7).
+
+-   **isrc_year:** A 2 character string representing the year of reference, as extracted from the **isrc** (see @isrchandbook p. 8). These are characters 6 and 7 of the ISRC and, according to the @ISO39101, it represents the year in which the ISRC was assigned. For instance, if the ISRC has 20 as year of reference, that represents 2020. The reason why this is kept as a string, instead of integer, it is because if we convert the string 04, for example, to integer, we will obtain 4, instead of 04. So, in order to maintain the 2 character structure, we kept the year of reference as a string.
+
+-   **label:** A string with the name of the label as extracted from Spotify. In this case, it is important to keep in mind that the API only ties an album to a label, instead of every individual track. So it might be the case that a particular track, that was released without being part of an album, does not have a label.
+
+[^1]: <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>
+
+[^2]: <https://musicat.musicstax.com/spotify-popularity-index>
+
+## References {.unnumbered}
