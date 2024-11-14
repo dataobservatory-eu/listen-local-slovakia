@@ -1,0 +1,113 @@
+---
+title: "SKCMDb: Making Every Music Ever Made in Slovakia Available Humans And Autonomous Systems"
+subtitle: "Big data and AI that works for music information centers"
+author:
+   - name: Antal, Dániel
+     orcid: 0000-0003-1689-0557
+   - name: Demčák, Richard
+     orcid: 0009-0007-0687-1201
+   - name: Grochal, Matej
+     orcid:    
+   - name: Jankovič, Marián
+     orcid: 0009-0003-6326-226X
+   - name: Mester, Anna Márta
+     orcid: 0009-0008-2274-8163
+   - name: Žilková, Anna
+     orcid: 0009-0007-5261-6930
+papersize: A4
+format:
+  html: 
+    toc-depth: 3
+  epub: default
+  docx: default
+  pdf:
+    colorlinks: true
+    #template-partials:
+    #  - title.tex
+    #latex: 
+    #   - lof: true
+editor: visual
+date: today
+keywords: Slovakia, Dataspace, Music, SKCMDb, Wikibase, Wikipedia, Reprex, Hudobné centrum, SOZA
+lang: en-GB
+bibliography: 
+   - bib/antal.bib
+   - bib/databiases.bib
+   - bib/datagovernance.bib
+   - bib/datainteroperability.bib
+   - bib/dataspace.bib
+   - bib/eccch.bib
+   - bib/OpenMuse.bib
+   - bib/privatelyhelddata.bib
+   - bib/trustworthyAI.bib
+   - bib/wikidata.bib
+---
+
+In 2020, we studied the effect of increasingly AI-driven streaming platforms on the Slovak music repertoire. We realised that music is being recommended by algorithms, not only to YouTube subscribers or Spotify but also to radio editors, concert promoters and festival organisers. This led to the conclusion that rights management organisations and music information centres must improve their practices to remain competitive and visible.
+
+![Download our feasibility study from [@antal_promoting_slovak_2020].](png/omo/20240605_D_Antal_Dataweek_OMO_3.png){width="80%" fig-align="center"}
+
+In the Open Music Europe project[^1], we are building a data infrastructure that aims to coordinate music knowledge (in our demonstration example, Slovak music) stored in various institutional silos and systems. We wanted to "plug in" the database of the Slovak Music Centre into a global data system like Wikipedia and Spotify and, at the same time, connect it with the rights management society SOZA and public libraries.
+
+[^1]: Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023]
+
+-   [x] We want to ensure that a MIC has the most accurate information about music. Whenever data is missing or new information has yet to reach their database, we try to look up the data from reliable sources and ensure that it arrives automatically in their system (to be reviewed by a knowledgeable human curator).
+
+-   [x] Make all music in Slovakia visible on all global music systems, encyclopedias, Europeana and the European Cultural Heritage Cloud. Enable people to locate sheets of works for sale or public lending and show where people can listen to the music in various formats.
+
+-   [x] Provide information in many languages: use modern library and information science to annotate the critical information in several languages for increased discoverability.
+
+-   [x] Provide the information in a dual format: enable a MIC to provide machine-readable, standardised, RDF annotated data to directly support the recommender systems of Spotify, YouTube, Deezer and other platforms.
+
+## European Interoperability Framework for Music
+
+To meet the modern service requirements of 2025, we needed to implement an enhanced implementation of the European Interoperability Framework (EIF) that extends to privately held data. The EIF is a four-layered specification for how to create world-class digital public services. In music, however, the private sector is vital, too. CISAC's members, the collective management organisation that registers new works, are private parties. Digital streaming platforms ingest more metadata about music in a week than Europeana Sound over ten years.
+
+![On the European Interoperability Framework see: [@eif_implementation_strategy_en_2017].](png/interoperability/eif_notitle_narrow_en.png){fig-align="center" width="80%"}
+
+To ensure legal and organisational interoperability, the members of the Open Music Consortium (SOZA, SMC, Reprex) signed a Memorandum of Understanding with the Slovak Ministry of Culture; later, SMC, SOZA and Reprex signed a more technical MoU with the Slovak National Library[^2].
+
+[^2]: See the references [@open_music_europe_sk_mou_2023; @snk_mou_2024]
+
+1.  The aim at the **legal** level was to understand the different rules of business and statistical confidentiality, as well as data protection rules in general. Harmonising the GDPR across a public information body like SMC and a private entity like SOZA is particularly challenging.
+2.  On the **organisational** level, we must ensure that different organisations (SMC, SOZA and the national library) understand each other's data and workflows, for example, in identifying a musical work or a musical group with no legal personality.
+3.  On the **semantic** level, we must ensure that the databases of SMC, SOZA, and the national library understand each other.
+4.  The **technical** level must ensure that harmonised workflows result in successful data exchanges, given the legal constraints and semantic definitions.
+
+## Music Data Sharing Space
+
+In our system design, we followed two important new European initiatives. In connecting cultural data, *European Collaborative Cloud for Cultural Heritage* (ECCH), and concerning connecting authoritative data across governmental and private systems, we referred to , bearing in mind, the novel European data governance regulations[^3].
+
+[^3]: See on the ECCH [@eccch_ex_ante_2022] and the European Music Observatory [@emo_feasibility_2020]; on connecting the (public) European Statistical System with privately-held data: [@ess_position_privately_held_2017; @ess_privately-held-communication_2022]; and as a general legal framework the Open Data Directive and the Data Governance Act [@directive_eu_2019_1024; @data_governance_act_2022].
+
+![](png/omo/20240605_D_Antal_Dataweek_OMO_7.png){width="80%" fig-align="center"}
+
+A **data (sharing) space** is a system that integrates data whenever it is needed, or is permitted, with some labor-intensive aspects of data integration postponed until it is possible to carry them out. In a data sharing space, like Reprex's Motion Picture Dataspace, we know where is the data in each organisation, we know its format, documentation standards, even known problems and issues. But we only read them into an application, for example, an application that calculates environmental effects or GHG emissions when it is needed and permitted. Our dataspace reduces the work in such scenarios by by setting up automatic matching and mapping generation techniques[^4].
+
+[^4]: You can read more in less technical language about this approach in *Dataspaces: Fundamentals, Principles, and Techniques* [@curry_dataspaces_2020], and in a more technical specification in *Data Sharing Spaces And Interoperability* [@bvda_dataspace_interoperability_2023]. Reprex is an affiliated member of the Big Data Value Association (BVDA).
+
+Wikibase is the software that runs the worlds largest open knowledge graph database, Wikidata, which synchronises knowledge with about 330 (different language) Wikipedias and countless national libraries, music services, and other datasources. Our dataspace is powereed by a extended and configured Wikibase system. Wikibase has often been used for authority control; it is also the system of the EU Knowledge Graph[^5].
+
+[^5]: The knowledge graph of the European Union: [@diefenbach:hal-03353225]; use for cultural authority control: [@bianchini_beyond_2021; @fagerving_wikidata_2023]. Our adoptation: [@antal_grochal_wikimedia].
+
+The most notorious problem plaguing digital services and databases is the unresolved issue of named entity disambiguation. With digital services providing access to over 100 million recordings, we often find dozens of artists or works with the same title. Named-entity ambiguity is confusing for humans and for autonomous AI systems, too.
+
+Our system focuses on harmonising the registration processes of various knowledge organisations, such as libraries and rights management organisations. We want to ensure that every artist, music group and the manifestation of their work in music recordings and sheets receive a globally unique and persistent identifier. We want to provide new recordings and sheets in at least one public library with a globally used VIAF (and, when applicable, an ISNI) identifier. To support named-entity disambiguation going back to hundreds of years of music creations and events diaries, we are developing trustworthy AI systems that remain strictly under human control in line with the new requirements of the EU's AI Act[^6].
+
+[^6]: *Ethics guidelines for trustworthy AI* [@ethics_guidelines_trustworthy_ai_2019]; *Artificial Intelligence Act* [@2024_1689_ai_act_short_en]. We were greatly informed by *Data feminism* [@data_feminism_2020] on the intersectional escalation of data biases that leads to disadvantages to women, small country, or independent repertoires.
+
+## Disseminating information
+
+Returning to our Feasibility study, we realised that about half of the music streams had data problems. They resulted in late or missed royalty payments. We also realised that almost a fifth of the Slovak repertoire had so low-quality metadata that music recommender systems could not make sense of what their recordings work. We are changing this situation. We want to ensure that we realise if the "Internet knows" misleading information about a work or recording. By modern data-enriching techniques, we ensure that the Slovak Music Centre has the most accurate 360° views of the repertoire it represents. By data dissemination, we also guarantee that digital streaming services and search engines are informed about precise and up-to-date knowledge.
+
+![](png/omo/20240605_D_Antal_Dataweek_OMO_6.png){width="100%" fig-align="center"}
+
+-   We carry out health checks on the metadata of artists and labels and highlight missing, potentially misleading, or erroneous information.
+-   Utilising Wikidata and Wikipedia, we disseminate the correct information to streaming services and search engines (which rely on knowledge graph technologies and regularly crawl Wikidata.) We are hosting a Wikipedian in Residence to find better cooperation with the Wikipedian community and the curator community of Wikidata.
+-   We are building the Slovak Comprehensive Music Database (SKCMDb) that will inform radio stations about the potential recordings that count into their local content (legally stipulated) broadcasting quota, where orchestras can find for purchase or public lending scores of works or where professional and enthusiast audiences find any music ever made in Slovakia.
+-   We are designing a new digital distribution model for non-profits and self-releasing artists who need help receiving professional service due to the low commercial value of their culturally valuable works.
+-   We are also experimenting with data bias checks to find out about potential algorithmic biases that work against the Slovak repertoire.
+
+{{< pagebreak >}}
+
+## References
