@@ -52,7 +52,7 @@ In the Open Music Europe project[^1], we are building a data infrastructure that
 
 [^1]: Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023]
 
--   [x] WWe want to ensure that a MICs and CMOs have the most accurate information about music. Whenever data is missing or new information has yet to reach their database, we try to look up the data from reliable sources and ensure that it arrives automatically in their system (to be reviewed by a knowledgeable human curator).
+-   [x] We want to ensure that a MICs and CMOs have the most accurate information about music. Whenever data is missing or new information has yet to reach their database, we try to look up the data from reliable sources and ensure that it arrives automatically in their system (to be reviewed by a knowledgeable human curator).
 
 -   [x] Make all music in Slovakia visible on all global music systems, encyclopaedia, Europeana and the European Cultural Heritage Cloud. Enable people to locate sheets of works for sale or public lending and show where people can listen to the music in various formats.
 
@@ -64,7 +64,9 @@ As seen from the points made above, this data infrastructure is beneficial to a 
 
 ## European Interoperability Framework for Music
 
-To meet the modern service requirements of 2025, we needed to implement an enhanced implementation of the European Interoperability Framework (EIF) that extends to privately held data. The EIF is a four-layered specification for how to create world-class digital public services. In music, however, the private sector is vital, too. CISAC’s members, the CMOs that register new works, are private parties. To add weight, digital streaming platforms ingest more metadata about music in a week than Europeana Sound over ten years.
+Nowadays most data is downloaded and used by intelligent software agents on various digital services and platforms. To meet the modern service requirements of 2025, we needed to implement an enhanced implementation of the European Interoperability Framework (EIF) that extends to privately held data. We need to communicate information and metadata about Slovak music in a way that musicologists, musicians and their managers, copyright law practitioners, citizen scientists as well as software agents understand worldwide.
+
+The EIF is a four-layered specification for how to create world-class digital public services. In music, however, the private sector is vital, too. CISAC’s members, the CMOs that register new works, are private parties. To add weight, digital streaming platforms ingest more metadata about music in a week than Europeana Sound over ten years.
 
 ![On the European Interoperability Framework see: [@eif_implementation_strategy_en_2017].](png/interoperability/eif_notitle_narrow_en.png){fig-align="center" width="80%"}
 
@@ -82,7 +84,7 @@ To ensure legal and organisational interoperability, the members of the Open Mus
 
 ## Music Data Sharing Space
 
-In our system design, we followed two important new European initiatives. In connecting cultural data, *European Collaborative Cloud for Cultural Heritage* (ECCH), and concerning connecting authoritative data across governmental and private systems, we adhere to the novel European data governance regulations[^3].
+In our system design, we followed two important new European initiatives. In connecting cultural data, *European Collaborative Cloud for Cultural Heritage* (ECCH), and the *Feasibility study for the establishment of a European Music Observatory*. Concerning connecting authoritative data across governmental and private systems, we adhere to the novel European data governance regulations[^3].
 
 [^3]: See on the ECCH [@eccch_ex_ante_2022] and the European Music Observatory [@emo_feasibility_2020]; on connecting the (public) European Statistical System with privately-held data: [@ess_position_privately_held_2017; @ess_privately-held-communication_2022]; and as a general legal framework the Open Data Directive and the Data Governance Act [@directive_eu_2019_1024; @data_governance_act_2022].
 
@@ -104,7 +106,7 @@ Our system focuses on harmonising the registration processes of various knowledg
 
 ## Disseminating information
 
-Returning to our Feasibility study, we realised that about half of the music streams had data problems. They resulted in late or missed royalty payments. We also realised that almost a fifth of the Slovak repertoire had such low-quality metadata that music recommender systems could not make sense of what their recordings work. We are changing this situation. We want to ensure that we realise if the “Internet knows” misleading information about a work or recording. By modern data-enriching techniques, we ensure that the MCS and SOZA have the most accurate 360° views of the repertoire they represent. By data dissemination, we also guarantee that digital streaming services and search engines are informed about precise and up-to-date knowledge.
+Returning to our Feasibility study, we realised that about half of the music streams had data problems. They resulted in late or missed royalty payments. We also realised that almost a fifth of the Slovak repertoire had such low-quality metadata that music recommender systems could not make sense of what their recordings work. We are changing this situation. We want to ensure that we realise if the “Internet knows” misleading information about a work or recording. Using modern data-enriching techniques, we ensure that the MCS and SOZA have the most accurate 360° views of the repertoire they represent. By data dissemination, we also guarantee that digital streaming services and search engines are informed about precise and up-to-date knowledge.
 
 ![](png/omo/20240605_D_Antal_Dataweek_OMO_6.png){width="100%" fig-align="center"}
 
@@ -113,6 +115,10 @@ Returning to our Feasibility study, we realised that about half of the music str
 -   We are building the Slovak Comprehensive Music Database (SKCMDb) that will inform radio stations about the potential recordings that count into their local content (legally stipulated) broadcasting quota, where orchestras can find for purchase or public lending scores of works or where professional and enthusiast audiences find any music ever made in Slovakia.
 -   We are designing a new digital distribution model for non-profits and self-releasing artists who need help receiving professional service due to the low commercial value of their culturally valuable works.
 -   We are also experimenting with data bias checks to find out about potential algorithmic biases that work against the Slovak repertoire.
+
+## Our Demo
+
+![](png/reprexbase/skcmdb_demo_screen_20241119.png){width="90%" fig-align="center"}
 
 {{< pagebreak >}}
 
