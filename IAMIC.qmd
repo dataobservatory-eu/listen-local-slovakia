@@ -31,6 +31,8 @@ editor: visual
 date: today
 keywords: Slovakia, Dataspace, Music, SKCMDb, Wikibase, Wikipedia, Reprex, Hudobné centrum, SOZA
 lang: en-GB
+nocite: |
+  @@omo_progress_report
 bibliography: 
    - bib/antal.bib
    - bib/databiases.bib
@@ -50,7 +52,7 @@ In 2020, we studied the effect of increasingly AI-driven streaming platforms on 
 
 In the Open Music Europe project[^1], we are building a data infrastructure that aims to coordinate music knowledge (in our demonstration example, Slovak music) stored in various institutional silos and systems. We wanted to “plug in” the database of the MIC Slovak Music Centre (MCS) into a global data system like Wikipedia or Spotify and, at the same time, connect it with the Slovak CMO SOZA and public libraries. This process is overseen by a data science company, Reprex.
 
-[^1]: Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023]
+[^1]: This project has received funding from the European Union’s Horizon Europe, research and innovation programme, under Grant Agreement No. 101095295 (Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023]). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
 
 -   [x] We want to ensure that a MICs and CMOs have the most accurate information about music. Whenever data is missing or new information has yet to reach their database, we try to look up the data from reliable sources and ensure that it arrives automatically in their system (to be reviewed by a knowledgeable human curator).
 
@@ -121,5 +123,21 @@ Returning to our Feasibility study, we realised that about half of the music str
 ![](png/reprexbase/skcmdb_demo_screen_20241119.png){width="90%" fig-align="center"}
 
 {{< pagebreak >}}
+
+## Context: Open Music Observatory
+
+[![You can read the long-form documentation of our plans [here](https://music.dataobservatory.eu/documentation/){target="_blank"}.](png/omo/Banner_OME_Open_Music_Observatory.png){fig-align="center"}](https://music.dataobservatory.eu/documentation/)
+
+Our ambition with the development of the **Open Music Observatory** is to provide the technological basis and a practical roadmap for creating a European Music Observatory in a bottom-up, decentralised way. Instead of waiting for a grand, central agreement on what should a European music observatory be collecting and who should control it, we suggest a pragmatic approach: allow any data owners and collectors who satisfy certain quality and cooperation rules to add their data to an Open Music Observatory; when it reaches a sufficient maturity for use in Europe, then decide if its maintenance requires a new institutional form or not. You can read or regularly updated progress report on this work here.
+
+Creating the Open Music Observatory is a cornerstone task of the Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023] Horizon Europe research and innovation project. This task is running till the end of the project (31 December 2025) with the collection, processing, and dissemination of more data and providing innovative, new data services in line with our exploitation pathways. This report is an accompanying document for the creation of Open Music Observatory as a digital infrastructure on the World Wide Web.
+
+The Open Music Observatory is a digital service provider for the music industry that follows the European Interoperability Framework (EIF) definition for such services with a unique governance model. The governance model and the digital service infrastructure represent a unique innovation that considers many good examples from the European Union and other industries.
+
+An observatory has traditionally been a permanent location for observing terrestrial, marine, or celestial events. In the past 30 years, it has also been used for long-term digital data collection programs for markets, social sciences, and humanities. Our milestone requires the start of this observatory after a lengthy and intensive planning and prototyping phase. It can be seen as a modern reimagination of the data observatory model, or the observatory 2.0. We created a new observatory model that fully aligns with the European Interoperability Framework but extends the governance of the digital services beyond public bodies, and allows the creation of a public-private partnership to manage the observatory.
+
+We were informed and influenced by the creation of Europeana (which started out from a similar collaborative project) and their new plans to extend their digital services into the European Collaborative Cloud for Cultural Heritage (ECCCH). We aim fully interoperability with Europeana and ECCCH, but we also bring a new element into their thinking. While they are mainly aggregating the work of public sector memory institutions, we are building a governance model that allows a more successful cooperation among the private sector and the public music sector.
+
+By the end of 2025, we aim to create an "observatory 3.0", which already hosts many intelligent data improvement technologies and fuels innovative applications/services in line with our project's exploitation pathways. These services are at different maturity levels, but they could not be brought to a testable MVP without building out the minimal digital infrastructure and governance model at this milestone.
 
 ## References
