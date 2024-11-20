@@ -1,0 +1,22 @@
+---
+title: "Slovak music register"
+format: html
+editor: visual
+---
+
+## Definition
+
+"A register aims to be a complete list of the objects in a specific group of objects or population." [@anders_register-based_2007] 
+
+In English we often use the word _register_ as an action verb. The original meaning of the Latin word _regerō_ is to record something, and a _registrum_ is the book that contains the records. Because a register aims to be a complete list of object or persons, the record keeping of the registry needs to add new things to the register, and mark or delete obsolete records.
+
+In Slovakia, SOZA maintains a register of composers and lyricist to identify their used works and pay royalties to these rightsholders. The SOSR of Slovakia maintains a register of enterprises that must account for their turnover, employee count, and other important economic data to calculate the country's GDP or employment statistics. The Slovak Music Centre maintains a register of orchestras to be able inform the global music audiences about their performances, and to help carrying out the annual KULT surveys.
+
+The problem in Slovakia and other developed nations, too, is that these registers are isolated.
+
+## Identification
+
+A key problem of the maintainers of registers and the users of the registers is the identification of the specific objects, people, data subjects that are registered. A business or a population register contains numerous identically named companies or people; a register of music works has many musical compositions titled "String Quartet No. 2.". Even Taylor Swift, the most successful musical performer of our times has namesakes.
+
+The problems of named entity recognition mean for the maintainer of the register that when they hear about the artist _Katarína Kubošiová_, they must be able to discern if she is the same person that they already registered under the artist name _Katarzia_? 
+
