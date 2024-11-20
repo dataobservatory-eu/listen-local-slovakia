@@ -42,19 +42,19 @@ bibliography:
  - bib/wikidata.bib
 ---
 
-We would like to present the concept and a demo of a *Finno-Ugric Data Sharing Space* as a knowledge base and a trustworthy AI application[^1], and a replication of our *Slovak Comprehensive Music Database*[^2] created with a data sharing space in 2020-2024 . Our application follows the novel AI and data regulatory requirements and recommendations [^3], particularly human-in-control and human-in-the-loop procedures, with a particular emphasis on community stewardship and control.
+We would like to present the concept and a demo of a *Finno-Ugric Data Sharing Space* as a knowledge base and a trustworthy AI application\[\^1\], and a replication of our *Slovak Comprehensive Music Database*[^1] created with a data sharing space in 2020-2024 . Our application follows the novel AI and data regulatory requirements and recommendations [^2], particularly human-in-control and human-in-the-loop procedures, with a particular emphasis on community stewardship and control.
 
-[^2]: @antal_promoting_slovak_2020
+[^1]: @antal_promoting_slovak_2020
 
-[^3]: @dataspace_for_cci_2022
+[^2]: @dataspace_for_cci_2022
 
-Our work in Slovakia aims to prototype work for a future European Music Observatory [^4]. It is a significant extension of the similar work of a best practice presented on DHNB 2023[^5]. We extend the legal, organisational and semantic interoperability towards privately owned music streaming platforms, music businesses and NGOs[^6]. For the first time we connected a national copyright registry (Slovak Performing and Mechanical Rights Society) parallel to the authority control of a national library. We included the Wikimedia Slovensko, a custodian of the community-edited Slovak Wikipedia to our data sharing institutions. Our approach is a significant step forward, because in the music, audiovisual, or fashion domains the private sector owns more data and digital assets than the GLAM sector.
+Our work in Slovakia aims to prototype work for a future European Music Observatory [^3]. It is a significant extension of the similar work of a best practice presented on DHNB 2023[^4]. We extend the legal, organisational and semantic interoperability towards privately owned music streaming platforms, music businesses and NGOs[^5]. For the first time we connected a national copyright registry (Slovak Performing and Mechanical Rights Society) parallel to the authority control of a national library. We included the Wikimedia Slovensko, a custodian of the community-edited Slovak Wikipedia to our data sharing institutions. Our approach is a significant step forward, because in the music, audiovisual, or fashion domains the private sector owns more data and digital assets than the GLAM sector.
 
-[^4]: Our work in Slovakia is funded by the *Open Music Europe* Horizon Europe project @openmuse_2023 and aim to fulfil the requirements set in @emo_feasibility_2020.
+[^3]: Our work in Slovakia is funded by the *Open Music Europe* Horizon Europe project @openmuse_2023 and aim to fulfil the requirements set in @emo_feasibility_2020.
 
-[^5]: @fagerving_wikidata_2023
+[^4]: @fagerving_wikidata_2023
 
-[^6]: @antal_grochal_wikimedia
+[^5]: @antal_grochal_wikimedia
 
 Our work is based on a mature, long-term data science research program; the creation of scientifically reviewed open-source software libraries, and their applications in the cross-section of social sciences and digital humanities research. We want to show that we can break down data silo barriers among different institutions' data as well as with our conceptualisation, replication and federation practices, barriers to new geographical coverage areas, further scientific disciplines, and the tacit knowledge of smaller subcultural and minority communities.
 
@@ -62,7 +62,7 @@ We would like to present a small scale dataspace as an interoperable, interdisci
 
 Our novel research has already made inroads into this area:
 
--   In our work within *Collecting, Evaluating, and Connecting Data for Dress History* [^7], we added information on tangible, music-relevant heritage connected to the music; we are also experimenting with the conceptualisation and extension to the intangible heritage aspect of folk dance choreography.
+-   In our work within *Collecting, Evaluating, and Connecting Data for Dress History* [^6], we added information on tangible, music-relevant heritage connected to the music; we are also experimenting with the conceptualisation and extension to the intangible heritage aspect of folk dance choreography.
 
 -   We want to show that our mature knowledge base concerning Slovak music can be federated with area-specific ethnomusicological knowledge from the Latvian Folk Archive, and through the recent community curated collections on the living music tradition of Finno-Ugric minorities.
 
@@ -70,6 +70,6 @@ Our novel research has already made inroads into this area:
 
 -   Following on the bad example of the Livonian and Mari Wikipedia incubators, we want to show how the open knowledge technology of Wikibase (the software behind Wikipedia, Wikidata and other open knowledge projects) can be used in a better way with higher data governance and community stewardship.
 
-[^7]: @pigozne_antal_dataset
+[^6]: @pigozne_antal_dataset
 
 ## References

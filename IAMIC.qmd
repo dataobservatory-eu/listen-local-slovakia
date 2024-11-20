@@ -1,0 +1,143 @@
+---
+title: "SKCMDb: Making Every Music Ever Made in Slovakia Available Humans And Autonomous Systems"
+subtitle: "Big data and AI that works for music information centers"
+author:
+   - name: Antal, Dániel
+     orcid: 0000-0003-1689-0557
+   - name: Demčák, Richard
+     orcid: 0009-0007-0687-1201
+   - name: Grochal, Matej
+     orcid:    
+   - name: Jankovič, Marián
+     orcid: 0009-0003-6326-226X
+   - name: Mester, Anna Márta
+     orcid: 0009-0008-2274-8163
+   - name: Žilková, Anna
+     orcid: 0009-0007-5261-6930
+papersize: A4
+format:
+  html: 
+    toc-depth: 3
+  epub: default
+  docx: default
+  pdf:
+    colorlinks: true
+    #template-partials:
+    #  - title.tex
+    #latex: 
+    #   - lof: true
+  hugo-md: default
+editor: visual
+date: today
+keywords: Slovakia, Dataspace, Music, SKCMDb, Wikibase, Wikipedia, Reprex, Hudobné centrum, SOZA
+lang: en-GB
+nocite: |
+  @@omo_progress_report
+bibliography: 
+   - bib/antal.bib
+   - bib/databiases.bib
+   - bib/datagovernance.bib
+   - bib/datainteroperability.bib
+   - bib/dataspace.bib
+   - bib/eccch.bib
+   - bib/OpenMuse.bib
+   - bib/privatelyhelddata.bib
+   - bib/trustworthyAI.bib
+   - bib/wikidata.bib
+---
+
+In 2020, we studied the effect of increasingly AI-driven streaming platforms on the Slovak music repertoire. We realised that music is being recommended by algorithms, not only to subscribers of YouTube or Spotify but also to radio editors, concert promoters and festival organisers. This led to the conclusion that rights management organisations (CMOs) and music information centres (MICs) must improve their practices to remain competitive and visible.
+
+![Download our feasibility study from [@antal_promoting_slovak_2020].](png/omo/20240605_D_Antal_Dataweek_OMO_3.png){width="80%" fig-align="center"}
+
+In the Open Music Europe project[^1], we are building a data infrastructure that aims to coordinate music knowledge (in our demonstration example, Slovak music) stored in various institutional silos and systems. We wanted to “plug in” the database of the MIC Slovak Music Centre (MCS) into a global data system like Wikipedia or Spotify and, at the same time, connect it with the Slovak CMO SOZA and public libraries. This process is overseen by a data science company, Reprex.
+
+[^1]: This project has received funding from the European Union’s Horizon Europe, research and innovation programme, under Grant Agreement No. 101095295 (Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023]). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
+
+-   [x] We want to ensure that a MICs and CMOs have the most accurate information about music. Whenever data is missing or new information has yet to reach their database, we try to look up the data from reliable sources and ensure that it arrives automatically in their system (to be reviewed by a knowledgeable human curator).
+
+-   [x] Make all music in Slovakia visible on all global music systems, encyclopaedia, Europeana and the European Cultural Heritage Cloud. Enable people to locate sheets of works for sale or public lending and show where people can listen to the music in various formats.
+
+-   [x] Provide the information in a dual format: enable a MIC to provide machine-readable, standardised, RDF annotated data to directly support the recommender systems of Spotify, YouTube, Deezer and other platforms.
+
+-   [x] Provide CMOs with a framework to make their members more visible to digital streaming platforms by enrichment, control and processing of available metadata and to also inform radio stations about the potential recordings that count into their local content, thus promoting local CMO members.
+
+As seen from the points made above, this data infrastructure is beneficial to a great degree for all the parties involved.
+
+## European Interoperability Framework for Music
+
+Nowadays most data is downloaded and used by intelligent software agents on various digital services and platforms. To meet the modern service requirements of 2025, we needed to implement an enhanced implementation of the European Interoperability Framework (EIF) that extends to privately held data. We need to communicate information and metadata about Slovak music in a way that musicologists, musicians and their managers, copyright law practitioners, citizen scientists as well as software agents understand worldwide.
+
+The EIF is a four-layered specification for how to create world-class digital public services. In music, however, the private sector is vital, too. CISAC’s members, the CMOs that register new works, are private parties. To add weight, digital streaming platforms ingest more metadata about music in a week than Europeana Sound over ten years.
+
+![On the European Interoperability Framework see: [@eif_implementation_strategy_en_2017].](png/interoperability/eif_notitle_narrow_en.png){fig-align="center" width="80%"}
+
+To ensure legal and organisational interoperability, the members of the Open Music Consortium (SOZA--Slovak Performing and Mechanical Rights Society, MCS, Reprex) signed a Memorandum of Understanding with the Slovak Ministry of Culture; later, MCS, SOZA and Reprex signed a more technical MoU with the Slovak National Library[^2].
+
+[^2]: See the references [@open_music_europe_sk_mou_2023; @snk_mou_2024]
+
+1.  The aim at the **legal** level was to understand the different rules of business and statistical confidentiality, as well as data protection rules in general. Harmonising the GDPR across a public information body like MCS and a private entity like SOZA is particularly challenging.
+
+2.  On the **organisational** level, we must ensure that different organisations (MCS, SOZA and the national library) understand each other’s data and workflows, for example, in identifying a musical work or a musical group with no legal personality.
+
+3.  On the **semantic** level, we must ensure that the databases of MCS, SOZA, and the national library understand each other.
+
+4.  The **technical** level must ensure that harmonised workflows result in successful data exchanges, given the legal constraints and semantic definitions.
+
+## Music Data Sharing Space
+
+In our system design, we followed two important new European initiatives. In connecting cultural data, *European Collaborative Cloud for Cultural Heritage* (ECCH), and the *Feasibility study for the establishment of a European Music Observatory*. Concerning connecting authoritative data across governmental and private systems, we adhere to the novel European data governance regulations[^3].
+
+[^3]: See on the ECCH [@eccch_ex_ante_2022] and the European Music Observatory [@emo_feasibility_2020]; on connecting the (public) European Statistical System with privately-held data: [@ess_position_privately_held_2017; @ess_privately-held-communication_2022]; and as a general legal framework the Open Data Directive and the Data Governance Act [@directive_eu_2019_1024; @data_governance_act_2022].
+
+![](png/omo/20240605_D_Antal_Dataweek_OMO_7.png){width="80%" fig-align="center"}
+
+A **data (sharing) space** is a system that integrates data whenever it is needed, or is permitted, with some labour-intensive aspects of data integration postponed until it is possible to carry them out. In a data sharing space, like Reprex’s Motion Picture Dataspace, we know where the data is in each organisation, we know its format, documentation standards, even known problems and issues. But we only load them into an application, for example, an application that calculates environmental effects or GHG emissions when it is needed and permitted. Our dataspace reduces the work in such scenarios by by setting up automatic matching and mapping generation techniques[^4].
+
+[^4]: You can read more in less technical language about this approach in *Dataspaces: Fundamentals, Principles, and Techniques* [@curry_dataspaces_2020], and in a more technical specification in *Data Sharing Spaces And Interoperability* [@bvda_dataspace_interoperability_2023]. Reprex is an affiliated member of the Big Data Value Association (BVDA).
+
+Wikibase is the software that runs the worlds largest open knowledge graph database, Wikidata, which synchronises knowledge with about 330 (different language) Wikipedias and countless national libraries, music services, and other data sources. Our dataspace is powered by an extended and configured Wikibase system. Wikibase has often been used for authority control; it is also the system of the EU Knowledge Graph[^5].
+
+[^5]: The knowledge graph of the European Union: [@diefenbach:hal-03353225]; use for cultural authority control: [@bianchini_beyond_2021; @fagerving_wikidata_2023]. Our solution: [@antal_grochal_wikimedia].
+
+The most notorious problem plaguing digital services and databases is the unresolved issue of named entity disambiguation. With digital services providing access to over 100 million recordings, we often find dozens of artists or works with the same title. Named-entity ambiguity is confusing for humans and for autonomous AI systems, too.
+
+Our system focuses on harmonising the registration processes of various knowledge organisations, such as libraries and CMOs. We want to ensure that every artist, music group and the manifestation of their work in music recordings and sheets receive a globally unique and persistent identifier. We want to provide new recordings and sheets in at least one public library with a globally used VIAF (and, when applicable, an ISNI) identifier. To support named-entity disambiguation going back to hundreds of years of music creations and events diaries, we are developing trustworthy AI systems that remain strictly under human control in line with the new requirements of the EU’s AI Actt[^6].
+
+[^6]: *Ethics guidelines for trustworthy AI* [@ethics_guidelines_trustworthy_ai_2019]; *Artificial Intelligence Act* [@2024_1689_ai_act_short_en]. We were greatly informed by *Data feminism* [@data_feminism_2020] on the intersectional escalation of data biases that leads to disadvantages to women, small countries, or independent repertoires.
+
+## Disseminating information
+
+Returning to our Feasibility study, we realised that about half of the music streams had data problems. They resulted in late or missed royalty payments. We also realised that almost a fifth of the Slovak repertoire had such low-quality metadata that music recommender systems could not make sense of what their recordings work. We are changing this situation. We want to ensure that we realise if the “Internet knows” misleading information about a work or recording. Using modern data-enriching techniques, we ensure that the MCS and SOZA have the most accurate 360° views of the repertoire they represent. By data dissemination, we also guarantee that digital streaming services and search engines are informed about precise and up-to-date knowledge.
+
+![](png/omo/20240605_D_Antal_Dataweek_OMO_6.png){width="100%" fig-align="center"}
+
+-   We carry out health checks on the metadata of artists and labels and highlight missing, potentially misleading, or erroneous information.
+-   Utilising Wikidata and Wikipedia, we disseminate the correct information to streaming services and search engines (which rely on knowledge graph technologies and regularly crawl Wikidata.) We are hosting a Wikipedian in Residence to find better cooperation with the Wikipedian community and the curator community of Wikidata.
+-   We are building the Slovak Comprehensive Music Database (SKCMDb) that will inform radio stations about the potential recordings that count into their local content (legally stipulated) broadcasting quota, where orchestras can find for purchase or public lending scores of works or where professional and enthusiast audiences find any music ever made in Slovakia.
+-   We are designing a new digital distribution model for non-profits and self-releasing artists who need help receiving professional service due to the low commercial value of their culturally valuable works.
+-   We are also experimenting with data bias checks to find out about potential algorithmic biases that work against the Slovak repertoire.
+
+## Our Demo
+
+![](png/reprexbase/skcmdb_demo_screen_20241119.png){width="90%" fig-align="center"}
+
+{{< pagebreak >}}
+
+## Context: Open Music Observatory
+
+[![You can read the long-form documentation of our plans [here](https://music.dataobservatory.eu/documentation/){target="_blank"}.](png/omo/Banner_OME_Open_Music_Observatory.png){fig-align="center"}](https://music.dataobservatory.eu/documentation/)
+
+Our ambition with the development of the **Open Music Observatory** is to provide the technological basis and a practical roadmap for creating a European Music Observatory in a bottom-up, decentralised way. Instead of waiting for a grand, central agreement on what should a European music observatory be collecting and who should control it, we suggest a pragmatic approach: allow any data owners and collectors who satisfy certain quality and cooperation rules to add their data to an Open Music Observatory; when it reaches a sufficient maturity for use in Europe, then decide if its maintenance requires a new institutional form or not. You can read or regularly updated progress report on this work here.
+
+Creating the Open Music Observatory is a cornerstone task of the Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023] Horizon Europe research and innovation project. This task is running till the end of the project (31 December 2025) with the collection, processing, and dissemination of more data and providing innovative, new data services in line with our exploitation pathways. This report is an accompanying document for the creation of Open Music Observatory as a digital infrastructure on the World Wide Web.
+
+The Open Music Observatory is a digital service provider for the music industry that follows the European Interoperability Framework (EIF) definition for such services with a unique governance model. The governance model and the digital service infrastructure represent a unique innovation that considers many good examples from the European Union and other industries.
+
+An observatory has traditionally been a permanent location for observing terrestrial, marine, or celestial events. In the past 30 years, it has also been used for long-term digital data collection programs for markets, social sciences, and humanities. Our milestone requires the start of this observatory after a lengthy and intensive planning and prototyping phase. It can be seen as a modern reimagination of the data observatory model, or the observatory 2.0. We created a new observatory model that fully aligns with the European Interoperability Framework but extends the governance of the digital services beyond public bodies, and allows the creation of a public-private partnership to manage the observatory.
+
+We were informed and influenced by the creation of Europeana (which started out from a similar collaborative project) and their new plans to extend their digital services into the European Collaborative Cloud for Cultural Heritage (ECCCH). We aim fully interoperability with Europeana and ECCCH, but we also bring a new element into their thinking. While they are mainly aggregating the work of public sector memory institutions, we are building a governance model that allows a more successful cooperation among the private sector and the public music sector.
+
+By the end of 2025, we aim to create an "observatory 3.0", which already hosts many intelligent data improvement technologies and fuels innovative applications/services in line with our project's exploitation pathways. These services are at different maturity levels, but they could not be brought to a testable MVP without building out the minimal digital infrastructure and governance model at this milestone.
+
+## References
