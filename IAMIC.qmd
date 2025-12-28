@@ -14,6 +14,8 @@ author:
      orcid: 0009-0008-2274-8163
    - name: Žilková, Anna
      orcid: 0009-0007-5261-6930
+   - name: Nagy, Mihály
+     orcid: 0000-0002-0577-8706
 papersize: A4
 format:
   html: 

@@ -19,6 +19,8 @@ author:
     orcid: 0000-0003-4253-1953
   - name: "Vīvere, Ieava"
     orcid: 0000-0003-3363-3552
+  - name: "Nagy, Mihály"
+    orcid: 0000-0002-0577-8706
 format:
   html: 
     toc-depth: 3
